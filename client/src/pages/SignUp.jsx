@@ -29,8 +29,8 @@ export default function SignUp() {
         return setErrorMessage(data.message);
       }
       setLoading(false);
-      if(res.ok){
-        navigate('/sign-in');
+      if (res.ok) {
+        navigate("/sign-in");
       }
     } catch (error) {
       setErrorMessage(error.message);
@@ -96,7 +96,7 @@ export default function SignUp() {
                 <>
                   <Spinner size="sm" />
                   <span className="pl-3">Loading...</span>
-                </>,
+                </>
               ) : (
                 "Sign Up"
               )}
